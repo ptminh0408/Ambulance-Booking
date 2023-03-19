@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_menu"
+    tools:context=".menu.About">
+
+    <Button
+        android:id="@+id/backButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="start"
+        android:text="back"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_back"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/ambulance_booking"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/aboutAppButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="screen"
+        android:gravity="center_vertical"
+        android:insetRight="10dp"
+        android:text="About app"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        app:icon="@drawable/ic_arrow_forward"
+        app:iconGravity="end"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+    <Button
+        android:id="@+id/termsButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="screen"
+        android:gravity="center_vertical"
+        android:insetRight="10dp"
+        android:text="Terms of user"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_arrow_forward"
+        app:iconGravity="end"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+</LinearLayout>

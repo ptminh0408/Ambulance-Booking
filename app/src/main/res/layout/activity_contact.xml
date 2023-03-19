@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu"
+    tools:context=".menu.Contact">
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="0908023491"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lottieCall"
+        app:layout_constraintTop_toBottomOf="@+id/tvFacebook" />
+
+    <TextView
+        android:id="@+id/tvFacebook"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="facebook.com/ambulance-booking"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lottieFacebook"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Contact us"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276"
+        app:srcCompat="@drawable/communicate" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="back"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_back"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieMail"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/email" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieCall"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieFacebook"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/call" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieFacebook"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieMail"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/facebook" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieWebsite"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieCall"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/website" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="ambulacebooking@gmail.com"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lottieMail"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/tvWeb"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="ambulancebooking.com"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/lottieWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

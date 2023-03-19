@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    app:cardBackgroundColor="#C7C7C7"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_card_layout"/>
+
+    <ImageView
+        android:id="@+id/payment_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/invoice"/>
+
+    <TextView
+        android:id="@+id/hospital_payment"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:text="Hospital name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/day_payment"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:text="dd-mm-yyyy"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/money_payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="300dp"
+        android:text="$$$$$"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+</androidx.cardview.widget.CardView>

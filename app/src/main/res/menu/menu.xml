@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#666666">
+
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"
+        app:cnb_iconColor="@color/profile"
+        />
+
+    <item
+        android:id="@+id/ic_payment"
+        android:icon="@drawable/ic_payment"
+        android:title="Payment"
+        app:cnb_iconColor="@color/payment"
+        />
+
+    <item
+        android:id="@+id/ic_hospital"
+        android:icon="@drawable/ic_baseline_local_hospital_24"
+        android:title="Hospitals"
+        app:cnb_iconColor="@color/hospitals"/>
+
+    <item
+        android:id="@+id/ic_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+            app:cnb_iconColor="@color/settings"
+        />
+</menu>

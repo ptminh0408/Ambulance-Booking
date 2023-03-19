@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:cnb_iconColor="@color/white"/>
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_history"
+        android:title="History"
+        app:cnb_iconColor="@color/white"/>
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notification"
+        app:cnb_iconColor="@color/white"/>
+
+    <item android:id="@+id/nav_Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        app:cnb_iconColor="@color/white"/>
+
+    <item android:id="@+id/nav_Setting"
+        android:icon="@drawable/ic_settings"
+        android:title="Setting"
+        app:cnb_iconColor="@color/white"/>
+
+</menu>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "346114690420",
+    "project_id": "ambulance-booking-aae3a",
+    "storage_bucket": "ambulance-booking-aae3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346114690420:android:dca0eae7331b3a52447021",
+        "android_client_info": {
+          "package_name": "com.example.ambulancebooking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346114690420-r0d40uk8n4bbt64nqptq9hgt9a92l982.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ambulancebooking",
+            "certificate_hash": "7207e2b987549eb3dfcd2fdc24dcdf437e68d040"
+          }
+        },
+        {
+          "client_id": "346114690420-g5gbu2puu7meovn66j5j3q3dvg0ejd4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnN6ODCyyObLXKms0er5TzD481IegkvxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346114690420-g5gbu2puu7meovn66j5j3q3dvg0ejd4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

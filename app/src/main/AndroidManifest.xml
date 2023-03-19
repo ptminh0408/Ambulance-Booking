@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ambulancebooking">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".map.ExampleApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AmbulanceBooking">
+        <activity
+            android:name=".driver.DriverChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".driver.DriverSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.HospitalDetail"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".menu.Hospitals"
+            android:exported="false" />
+        <activity
+            android:name=".user.ChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".driver.DriverSignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".driver.DriverSignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".driver.DriverMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverOrUserActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Content.TermsOfUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Content.AboutAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Content.LanguageSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.SignInOptionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.PhoneVerifyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.PhoneSignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".map.NewMap"
+            android:exported="false" />
+        <activity
+            android:name=".user.FingerprintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".map.Map"
+            android:exported="false" />
+        <activity
+            android:name=".menu.About"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Payment"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Contact"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".user.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.SignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".SplashScreen.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBfsr99sqhCdfv2VdJphF-W5gheu_PFz4I" />
+
+        <service
+            android:name=".map.car.MainCarAppService"
+            android:exported="true"
+            android:foregroundServiceType="location"
+            android:icon="@drawable/ic_launcher_background"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="androidx.car.app.CarAppService" />
+
+                <category android:name="androidx.car.app.category.NAVIGATION" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
